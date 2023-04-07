@@ -67,8 +67,14 @@ class _StopwatchMenuState extends State<StopwatchMenu> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
+            SizedBox(height:50 ,),
+            Container(
+              width: 200,
+              child: Image.network('https://cdn-icons-png.flaticon.com/512/610/610073.png'),
+            ),
+            SizedBox(height: 50,),
             Text(
               "${_formatTime(_hours)}:${_formatTime(_minutes)}:${_formatTime(_seconds)}",
               style: TextStyle(
