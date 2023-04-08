@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas4tpm/profile.dart';
-import 'package:tugas4tpm/favoriteweb.dart';
+import 'package:tugas4tpm/favweb.dart';
 import 'package:tugas4tpm/stopwatch.dart';
 import 'package:tugas4tpm/webmenu.dart';
 

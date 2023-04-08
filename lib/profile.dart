@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tugas4tpm/datadiri.dart';
+import 'package:tugas4tpm/profiledata.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
