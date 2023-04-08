@@ -63,6 +63,9 @@ flutter:
   assets:
     - assets/login.png
     - assets/wave.png
+    - assets/hartanta.jpg
+    - assets/fajar.jpeg
+    - assets/gilang.JPG
 
   # To add assets to your application, add an assets section, like this:
   # assets:

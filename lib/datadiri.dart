@@ -24,20 +24,20 @@ var data =[
       kelas: 'IF - A',
       cita_cita: 'Cita-Cita Bekerja di Google',
       ttl: 'Magelang , 9 Juli 2000',
-      image: 'assets/fajar.jpg'),
+      image: 'assets/fajar.jpeg'),
   datadiri(
       name: 'Gilang Yoenal Marinta',
       nim: '123200056',
       kelas: 'IF - A',
       cita_cita: 'Ingin Menjadi Kaya',
       ttl:'Biak , 15 Agustus 2002',
-      image: 'assets/gilang.jpg'),
+      image: 'assets/gilang.JPG'),
 
   datadiri(
       name: 'Hartanta Dwi Putra Sembiring',
       nim: '123200037',
       kelas: 'IF - A',
-      cita_cita: 'Ingin Menjadi Sukses',
-      ttl: 'Biak , 15 Agustus 2002',
+      cita_cita: 'Ingin Menjadi Petani Berdasi',
+      ttl: 'Kabanjahe , 28 Mei 2002',
       image: 'assets/hartanta.jpg'),
 ];

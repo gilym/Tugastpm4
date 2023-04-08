@@ -28,8 +28,7 @@ class ProfilePage extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 50.0,
-                  backgroundImage: NetworkImage(
-                      'https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg'),
+                  backgroundImage: AssetImage(Data.image),
                 ),
                 SizedBox(height: 16.0),
                 Text(
@@ -55,7 +54,8 @@ class ProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 16.0),
                 Divider(
-                  thickness: 1.2,
+                  thickness: 1,
+                  color: Colors.grey[300],
                 ),
                 ListTile(
                   leading: Icon(

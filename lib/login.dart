@@ -128,7 +128,7 @@ class _LoginPageStateState extends State<LoginPageState> {
               isLoginSucces = true;
             });
 
-            Navigator.push(
+            Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                     builder: (context) => BotNavBar()
