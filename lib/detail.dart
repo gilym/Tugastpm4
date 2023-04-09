@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Detail extends StatefulWidget {
   final WebsiteData web;
+
   const Detail({Key? key, required this.web}) : super(key: key);
 
   @override

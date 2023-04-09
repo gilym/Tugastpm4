@@ -19,28 +19,29 @@ class _LoginPageStateState extends State<LoginPageState> {
     return Scaffold(
       backgroundColor:
           Colors.white, // tambahkan warna background putih ke scaffold
-      body: Stack(
-        // gunakan stack untuk menumpuk gambar dan AppBar
-        children: [
-          Image.asset(
-            'assets/wave.png',
-            fit: BoxFit.fill,
-          ),
-          Column(
-            children: [
-              SizedBox(
-                  height:
-                      60), // atur tinggi kosong setara dengan ketinggian AppBar
-              Container(
-                width: 300,
-                child: Image.asset('assets/login.png'),
-              ),
-              _usernameField(),
-              _passwordField(),
-              _loginButton(context),
-            ],
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Image.asset(
+              'assets/wave.png',
+              fit: BoxFit.fill,
+            ),
+            Column(
+              children: [
+                SizedBox(
+                  height: 60,
+                ),
+                Container(
+                  width: 300,
+                  child: Image.asset('assets/login.png'),
+                ),
+                _usernameField(),
+                _passwordField(),
+                _loginButton(context),
+              ],
+            ),
+          ],
+        ),
       ),
       appBar: AppBar(
         title: Text("Login"),
@@ -49,7 +50,6 @@ class _LoginPageStateState extends State<LoginPageState> {
             Colors.green, // atur background color AppBar menjadi transparent
         elevation: 0, // hilangkan bayangan pada AppBar
       ),
-      resizeToAvoidBottomInset: false,
     );
   }
 
@@ -119,7 +119,7 @@ class _LoginPageStateState extends State<LoginPageState> {
         ),
         onPressed: () {
           String text = "";
-          if (username == "1" && password == "1") {
+          if (username == "user" && password == "user") {
             setState(() {
               text = "Login Success";
               isLoginSucces = true;
