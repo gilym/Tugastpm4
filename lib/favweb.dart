@@ -16,10 +16,6 @@ class _FavoritewebState extends State<Favoriteweb> {
   @override
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    Dashboard(),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -121,7 +117,9 @@ class _FavoritewebState extends State<Favoriteweb> {
                                     : Icons.favorite_border,
                                 color: Colors.redAccent,
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+favoriteWebsites.removeAt(index);
+                              },
                             ),
                           ),
                         ],
